@@ -57,4 +57,9 @@ public class SettingsManager : MonoBehaviour
                 break;
         }
     }
+    void View()
+    {
+        settingsPanel.SetActive(!settingsPanel.activeSelf);
+
+    }
 }
