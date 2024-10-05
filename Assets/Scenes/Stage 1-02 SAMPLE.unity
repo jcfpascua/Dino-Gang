@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c08721eeb27b91469d3a7993bbed495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  followTarget: {fileID: 0}
+  cam: {fileID: 704360354}
+  followTarget: {fileID: 764990513}
 --- !u!212 &17058858
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -547,6 +547,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 339bb7cc4487b35479ec967d83ca37e5, type: 3}
+--- !u!4 &764990513 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6271776078979464366, guid: 339bb7cc4487b35479ec967d83ca37e5, type: 3}
+  m_PrefabInstance: {fileID: 764990512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &890247588
 GameObject:
   m_ObjectHideFlags: 3
@@ -680,8 +685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c08721eeb27b91469d3a7993bbed495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  followTarget: {fileID: 0}
+  cam: {fileID: 704360354}
+  followTarget: {fileID: 764990513}
 --- !u!212 &1647001111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -748,7 +753,7 @@ GameObject:
   - component: {fileID: 1704296031}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3662,8 +3667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c08721eeb27b91469d3a7993bbed495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  followTarget: {fileID: 0}
+  cam: {fileID: 704360354}
+  followTarget: {fileID: 764990513}
 --- !u!212 &1782046734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3765,7 +3770,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 764990513}
   m_Lens:
     FieldOfView: 34
     OrthographicSize: 8.76
@@ -3846,8 +3851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c08721eeb27b91469d3a7993bbed495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  followTarget: {fileID: 0}
+  cam: {fileID: 704360354}
+  followTarget: {fileID: 764990513}
 --- !u!212 &1833263964
 SpriteRenderer:
   m_ObjectHideFlags: 0
