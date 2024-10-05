@@ -812,7 +812,7 @@ GameObject:
   - component: {fileID: 1379984425}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3153,6 +3153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kosmo
       objectReference: {fileID: 0}
+    - target: {fileID: 5174717996275906283, guid: 339bb7cc4487b35479ec967d83ca37e5, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6271776078979464366, guid: 339bb7cc4487b35479ec967d83ca37e5, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -3204,6 +3208,10 @@ PrefabInstance:
     - target: {fileID: 6271776078979464366, guid: 339bb7cc4487b35479ec967d83ca37e5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8821803712886815375, guid: 339bb7cc4487b35479ec967d83ca37e5, type: 3}
+      propertyPath: jumpForce
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
