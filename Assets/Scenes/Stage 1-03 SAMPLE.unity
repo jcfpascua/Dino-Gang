@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 902633176}
-  followTarget: {fileID: 0}
+  followTarget: {fileID: 1301645531}
 --- !u!212 &48227015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 902633176}
-  followTarget: {fileID: 0}
+  followTarget: {fileID: 1301645531}
 --- !u!212 &53612034
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 1099330751}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10027,7 +10027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 902633176}
-  followTarget: {fileID: 0}
+  followTarget: {fileID: 1301645531}
 --- !u!212 &1290447458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10153,6 +10153,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 339bb7cc4487b35479ec967d83ca37e5, type: 3}
+--- !u!4 &1301645531 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6271776078979464366, guid: 339bb7cc4487b35479ec967d83ca37e5, type: 3}
+  m_PrefabInstance: {fileID: 1301645530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1530378162
 GameObject:
   m_ObjectHideFlags: 0
@@ -10202,7 +10207,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1301645531}
   m_Lens:
     FieldOfView: 34
     OrthographicSize: 8.76
@@ -10329,7 +10334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 902633176}
-  followTarget: {fileID: 0}
+  followTarget: {fileID: 1301645531}
 --- !u!212 &1849638593
 SpriteRenderer:
   m_ObjectHideFlags: 0
