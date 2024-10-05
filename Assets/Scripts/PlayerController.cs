@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour
 {
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
+    public float jumpForce = 10f;  // Force applied when jumping
     Vector2 moveInput;
+    private bool isGrounded;        // Check if the player is on the ground
 
     public float CurrentMoveSpeed 
     {
@@ -47,7 +49,6 @@ public class PlayerController : MonoBehaviour
             animator.SetBool(AnimationStrings.isMoving, value);
         }
     }
-
 
     [SerializeField]
     private bool _isRunning = false;
@@ -90,16 +91,18 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        // Initially hide the settings panel
     }
 
-    // Update is called once per frame
     void Update()
     {
-
+        // Check for jump input
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
+        {
+            Jump(); // Call jump method if on ground
+        }
     }
 
     private void FixedUpdate()
@@ -140,6 +143,28 @@ public class PlayerController : MonoBehaviour
         else if (context.canceled)
         {
             isRunning = false;
+        }
+    }
+
+    // Jump mechanic
+    void Jump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce); // Apply jump
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;  // Player is on the ground
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false; // Player is not on the ground
         }
     }
 }
