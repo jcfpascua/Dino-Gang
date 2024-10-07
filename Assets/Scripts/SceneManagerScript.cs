@@ -35,4 +35,7 @@ public class SceneManagerScript : MonoBehaviour
     public void ChangeTo1_3() {
         SceneManager.LoadScene("Stage 1-03 SAMPLE");
     }
+    public void ChangeToMain() {
+        SceneManager.LoadScene("Main Menu");
+    }
 }
