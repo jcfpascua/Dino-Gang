@@ -15,18 +15,16 @@ public class SceneManagerScript : MonoBehaviour
     [SerializeField]
     public void ChangeToSettings()
     {
-        SceneManager.LoadScene("Settings Scene");
+        SceneManager.LoadScene("Settings");
     }
     [SerializeField]
     public void ChangeTo1_1() {
         SceneManager.LoadScene("Stage 1-01");
     }
-
-    public void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Pitfall")) {
-            Debug.Log("I'M BACK IN THE FUCKING BUILDING AGAIN");
-        } else if (other.gameObject.CompareTag("Finish")) {
-            Debug.Log("martha i'm coming home sweetie");
-        }
+    public void ChangeTo1_2() {
+        SceneManager.LoadScene("Stage 1-02 SAMPLE");
+    }
+    public void ChangeTo1_3() {
+        SceneManager.LoadScene("Stage 1-03 SAMPLE");
     }
 }
