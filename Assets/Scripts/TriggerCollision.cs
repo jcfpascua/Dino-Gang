@@ -16,12 +16,18 @@ public class TriggerCollision : MonoBehaviour
         }
     }
 
-    // Trigger when player finishes the level (e.g., collides with end point)
+    // Trigger when player collides with certain objects
     public void OnTriggerEnter2D(Collider2D other)
     {
+        // Check if the player reaches the finish line
         if (other.CompareTag("Finish"))  // Make sure the finish line has the tag "Finish"
         {
             SceneManager.LoadScene("Win Scene");  // Load the win scene
+        }
+        // Check if the player collides with a pit or spike
+        else if (other.CompareTag("Deadly")) // Ensure pits and spikes have these tags
+        {
+            SceneManager.LoadScene("Lose Scene");  // Load the lose scene
         }
     }
 }

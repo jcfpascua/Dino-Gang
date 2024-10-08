@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Pitfall
+  - Deadly
   layers:
   - Default
   - TransparentFX

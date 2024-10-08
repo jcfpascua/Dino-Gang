@@ -38,4 +38,8 @@ public class SceneManagerScript : MonoBehaviour
     public void ChangeToMain() {
         SceneManager.LoadScene("Main Menu");
     }
+
+    public void Retry02() {
+        SceneManager.LoadScene("Stage 1-02 SAMPLE");
+    }
 }
