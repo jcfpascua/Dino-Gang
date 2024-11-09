@@ -40,6 +40,6 @@ public class SceneManagerScript : MonoBehaviour
     }
 
     public void Retry02() {
-        SceneManager.LoadScene("Stage 1-02 SAMPLE");
+        SceneManager.LoadScene("Level Select");
     }
 }
