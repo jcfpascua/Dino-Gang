@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Pitfall
   - Deadly
+  - Damage PlaceHolder
   layers:
   - Default
   - TransparentFX
