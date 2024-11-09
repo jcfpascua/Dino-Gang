@@ -25,7 +25,6 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            // Trigger player death logic here
             Debug.Log("Player is dead!");
             SceneManager.LoadScene("Lose Scene");
         }
